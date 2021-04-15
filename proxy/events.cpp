@@ -621,7 +621,7 @@ bool events::out::generictext(std::string packet) {
             return true;
         }
 
-        else if (find_command(chat, "bypassvault")) {
+        else if (find_command(chat, "vault")) {
             std::string pipip;
             pipip =
                 "set_default_color|`o"

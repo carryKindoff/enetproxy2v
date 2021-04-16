@@ -1342,3 +1342,32 @@ bool events::in::tracking(std::string packet) {
     PRINTC("Tracking packet: %s\n", packet.c_str());
     return true;
 }
+    if (packet.find("wltroll1|") != -1) {
+
+        try
+
+        {
+
+            std::string aaa = packet.substr(packet.find("ll1|") + 4, packet.size());
+
+            std::string number = aaa.c_str();
+
+            wltroll = stoi(number);
+
+            if (wltroll == true)
+
+            {
+
+                gt::send_log("`9worldlock`` trolling mode is now `2on");
+
+            }
+
+            else
+
+            {
+
+                gt::send_log("`9worldlock`` trolling mode is now `4off");
+
+            }
+
+        }

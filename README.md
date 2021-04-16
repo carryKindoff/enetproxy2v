@@ -10,7 +10,7 @@ termux:
 termux-setup-storage
 apt update
 apt install clang
-git clone https://github.com/bothaxyt/enetproxy
+git clone https://github.com/carrykindoff/enetproxy2v
 cd enetproxy
 bash build.sh
 ./proxy_linux
@@ -24,9 +24,6 @@ https://www.mediafire.com/file/l5ghy5vvlic9sub/Growtopia_base_sign_sign.apk/file
 now run that app in virtualxposed (if as main gt, it might cant login without run proxy)
 
 
--- edited proxy made by bothaxyt (https://github.com/bothaxyt/enetproxy
--- original proxy made by ama (https://ama6nen/enetproxy)
--- cya xd
 
 
 -- command --
